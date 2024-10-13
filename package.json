@@ -4,12 +4,16 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "test": "npx codeceptjs run --steps",
+  "allure:generate": "npx allure generate output/allure-results --clean",
+  "allure:open": "npx allure open",
+  "test:report": "npm test && npm run allure:generate && npm run allure:open"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@codeceptjs/allure-legacy": "^1.0.2",
     "@cucumber/cucumber": "^11.0.1",
     "codeceptjs": "^3.5.11",
     "playwright": "^1.48.0"
