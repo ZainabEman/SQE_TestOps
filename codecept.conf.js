@@ -24,7 +24,7 @@ exports.config = {
   plugins: {
     allure: {
       enabled: true, // Enable the Allure plugin
-      outputDir: './allure-report' // Define the output directory for Allure results
+      outputDir: './allure-report'
     },
     retryFailedStep: {
       enabled: true  // Plugin to retry failed steps automatically

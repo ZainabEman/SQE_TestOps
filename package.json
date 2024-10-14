@@ -4,11 +4,11 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-  "test": "npx codeceptjs run --steps",
-  "allure:generate": "npx allure generate output/allure-results --clean",
-  "allure:open": "npx allure open",
-  "test:report": "npm test && npm run allure:generate && npm run allure:open"
-},
+    "test": "npx codeceptjs run --steps",
+    "allure:generate": "npx allure generate allure-report --clean",
+    "allure:open": "npx allure open",
+    "test:report": "npm test && npm run allure:generate && npm run allure:open"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

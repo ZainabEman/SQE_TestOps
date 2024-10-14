@@ -81,3 +81,6 @@ Scenario('Valid credentials', ({I})=>{
 
 //open report
 //npx allure open
+
+//all in one command //run test generate open report
+//npm run test:report
