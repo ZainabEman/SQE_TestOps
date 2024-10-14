@@ -1,9 +1,16 @@
-# Use the official Node.js 14 image.
+# Use the official Node.js 14 image, which is based on Debian.
 # https://hub.docker.com/_/node
 FROM node:14
 
 # Create and change to the app directory.
 WORKDIR /usr/src/app
+
+# Install Java OpenJDK 8, required for Allure
+RUN apt-get update && apt-get install -y openjdk-8-jdk && rm -rf /var/lib/apt/lists/*
+
+# Set JAVA_HOME environment variable
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
+ENV PATH $JAVA_HOME/bin:$PATH
 
 # Copy application dependency manifests to the container image.
 # A wildcard is used to ensure both package.json AND package-lock.json are copied.
