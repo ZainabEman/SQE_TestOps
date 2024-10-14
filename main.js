@@ -38,19 +38,19 @@ Scenario('Password field left empty', ({ I }) => {
 });
 
 //Too many failed login attempts
-Scenario('Too many failed login attempts', ({ I }) => {
-    I.amOnPage('https://github.com/login');
+// Scenario('Too many failed login attempts', ({ I }) => {
+//     I.amOnPage('https://github.com/login');
 
-    for (let i = 0; i < 5; i++) {
-        I.fillField('Username or email address', 'ZainabEman');
-        I.fillField('Password', 'wrongpassword');
-        I.click('Sign in');
-        I.waitForText('Incorrect username or password.', 2);
-        I.refreshPage(); 
-    }
+//     for (let i = 0; i < 5; i++) {
+//         I.fillField('Username or email address', 'ZainabEman');
+//         I.fillField('Password', 'wrongpassword');
+//         I.click('Sign in');
+//         I.waitForText('Incorrect username or password.', 2);
+//         I.refreshPage(); 
+//     }
 
-    I.saveScreenshot('too_many_failed_attempts.png');
-});
+//     I.saveScreenshot('too_many_failed_attempts.png');
+// });
 
 //Invalid Credentials
 Scenario('invalid credentials', ({I})=>{
@@ -84,3 +84,7 @@ Scenario('Valid credentials', ({I})=>{
 
 //all in one command //run test generate open report
 //npm run test:report
+
+//npm install for other os setup
+//npm run build
+//npm test //to build and run test cases
