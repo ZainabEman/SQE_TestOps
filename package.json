@@ -15,7 +15,11 @@
   "devDependencies": {
     "@codeceptjs/allure-legacy": "^1.0.2",
     "@cucumber/cucumber": "^11.0.1",
-    "codeceptjs": "^3.5.11",
-    "playwright": "^1.48.0"
+    "allure-codeceptjs": "^3.0.5",
+    "codeceptjs": "^3.6.7",
+    "cucumber": "^6.0.7",
+    "exceljs": "^4.4.0",
+    "playwright": "^1.48.1",
+    "webdriverio": "^9.2.1"
   }
 }
