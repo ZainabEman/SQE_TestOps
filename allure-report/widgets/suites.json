@@ -1,1 +1,1 @@
-{"total":0,"items":[]}
+{"total":3,"items":[{"uid":"1a85855463aca3ea10b8fe0fcb3372b8","name":"Login","statistic":{"failed":0,"broken":0,"skipped":0,"passed":5,"unknown":0,"total":5}},{"uid":"758551de6c2a68e7893ae5113e0f4aee","name":"GitHub Login","statistic":{"failed":0,"broken":0,"skipped":0,"passed":5,"unknown":0,"total":5}},{"uid":"1f4820f9225d7cebe2bc7cf1834ff11e","name":"Login to GitHub using data from Excel","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

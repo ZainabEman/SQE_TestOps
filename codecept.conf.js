@@ -12,7 +12,7 @@ exports.config = {// Specify only demo.js to run this specific script
   include: {
     I: './steps_file.js'
   },
-  /* mocha: {},
+   mocha: {},
   bootstrap: null,
   timeout: null,
   teardown: null,
@@ -20,7 +20,7 @@ exports.config = {// Specify only demo.js to run this specific script
     gherkin: {
     features: './features/github_login.feature',
     steps: ['./step_definitions/steps.js']
-   },*/
+   },
   plugins: {
     screenshotOnFail: {
       enabled: true

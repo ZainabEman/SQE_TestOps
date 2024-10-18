@@ -63,4 +63,4 @@ ENV ALLURE_REPORT=/usr/src/app/allure-report
 RUN mkdir -p $ALLURE_RESULTS $ALLURE_REPORT
 
 # Run the web service on container startup.
-CMD ["node", "main.js"]
+CMD ["node", "demo.js"]
